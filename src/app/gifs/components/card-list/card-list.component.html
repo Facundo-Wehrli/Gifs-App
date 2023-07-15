@@ -1,0 +1,10 @@
+<div class="row">
+  <!-- `[gif]="gif"` is binding the value of the `gif` variable to the `gif` property of the
+  `gifs-card` component. This allows the `gifs-card` component to access and use the `gif` data
+  for each iteration of the `ngFor` loop. -->
+  <gifs-card
+    *ngFor="let gif of gifs"
+    [gif]="gif"
+    class="col-md-3 col-sm6"
+  ></gifs-card>
+</div>
